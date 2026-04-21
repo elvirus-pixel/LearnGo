@@ -8,7 +8,7 @@ import (
 
 func main() {
 
-    // Here’s a basic `switch`.
+    // Here's a basic `switch`.
     i := 2
     fmt.Print("Write ", i, " as ")
     switch i {

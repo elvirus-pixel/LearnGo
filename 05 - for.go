@@ -1,4 +1,4 @@
-// `for` is Go’s only looping construct. Here are some basic types of for loops.
+// `for` is Go's only looping construct. Here are some basic types of for loops.
 package main
 
 import "fmt"
@@ -17,7 +17,7 @@ func main() {
         fmt.Println(j)
     }
 
-    // Another way of accomplishing the basic “do this N times” iteration is `range` over an integer.
+    // Another way of accomplishing the basic "do this N times" iteration is `range` over an integer.
     for i := range 3 {
         fmt.Println("range", i)
     }
@@ -36,7 +36,7 @@ func main() {
         fmt.Println(n)
     }
 }
-// We’ll see some other `for` forms later when we look at range statements, channels, and other data structures.
+// We'll see some other `for` forms later when we look at range statements, channels, and other data structures.
 
 /*
 $ go run '05 - for.go'

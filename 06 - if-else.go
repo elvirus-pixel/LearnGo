@@ -5,7 +5,7 @@ import "fmt"
 
 func main() {
 
-    // Here’s a basic example.
+    // Here's a basic example.
     if 7%2 == 0 {
         fmt.Println("7 is even")
     } else {
@@ -31,9 +31,9 @@ func main() {
         fmt.Println(num, "has multiple digits")
     }
 
-    // Note that you don’t need parentheses around conditions in Go, but that the braces are required.
+    // Note that you don't need parentheses around conditions in Go, but that the braces are required.
 }
-// There is no `ternary if` in Go, so you’ll need to use a full if statement even for basic conditions.
+// There is no `ternary if` in Go, so you'll need to use a full if statement even for basic conditions.
 // Ternary ifs: https://en.wikipedia.org/wiki/Ternary_conditional_operator
 
 /*

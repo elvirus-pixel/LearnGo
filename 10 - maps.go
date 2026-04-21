@@ -1,4 +1,4 @@
-// Maps are Go’s built-in associative data type (sometimes called `hashes` or `dicts` in other languages).
+// Maps are Go's built-in associative data type (sometimes called `hashes` or `dicts` in other languages).
 package main
 
 import (
@@ -22,7 +22,7 @@ func main() {
     v1 := m["k1"]
     fmt.Println("v1:", v1)
 
-    // If the key doesn’t exist, the zero value of the value type is returned.
+    // If the key doesn't exist, the zero value of the value type is returned.
     // Zero value: https://go.dev/ref/spec#The_zero_value
     v3 := m["k3"]
     fmt.Println("v3:", v3)
@@ -40,7 +40,7 @@ func main() {
 
     // The optional second return value when getting a value from a map indicates if the key was present in the map. 
     // This can be used to disambiguate between missing keys and keys with zero values like `0` or `""`. 
-    // Here we didn’t need the value itself, so we ignored it with the blank identifier `_`.
+    // Here we didn't need the value itself, so we ignored it with the blank identifier `_`.
     _, prs := m["k2"]
     fmt.Println("prs:", prs)
 

@@ -14,7 +14,7 @@ func main() {
     fmt.Println("uninit:", s, s == nil, len(s) == 0)
 
     // To create a slice with non-zero length, use the builtin `make`. Here we make a slice of `strings` of length `3` (initially zero-valued). 
-    // By default a new slice’s capacity is equal to its length; if we know the slice is going to grow ahead of time, it’s possible to pass a capacity explicitly as an additional parameter to `make`.
+    // By default a new slice's capacity is equal to its length; if we know the slice is going to grow ahead of time, it's possible to pass a capacity explicitly as an additional parameter to `make`.
     s = make([]string, 3)
     fmt.Println("emp:", s, "len:", len(s), "cap:", cap(s))
 
@@ -35,7 +35,7 @@ func main() {
     s = append(s, "e", "f")
     fmt.Println("apd:", s)
 
-    // Slices can also be `copy`’d. Here we create an empty slice `c` of the same length as `s` and copy into `c` from `s`.
+    // Slices can also be `copy`'d. Here we create an empty slice `c` of the same length as `s` and copy into `c` from `s`.
     c := make([]string, len(s))
     copy(c, s)
     fmt.Println("cpy:", c)

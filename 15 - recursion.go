@@ -1,4 +1,4 @@
-// Go supports recursive functions. Here’s a classic example.
+// Go supports recursive functions. Here's a classic example.
 package main
 
 import "fmt"
@@ -14,7 +14,7 @@ func fact(n int) int {
 func main() {
     fmt.Println(fact(7))
 
-    // Anonymous functions can also be recursive, but this requires explicitly declaring a variable with `var` to store the function before it’s defined.
+    // Anonymous functions can also be recursive, but this requires explicitly declaring a variable with `var` to store the function before it's defined.
     var fib func(n int) int
 
     fib = func(n int) int {

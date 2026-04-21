@@ -1,4 +1,4 @@
-// `range` iterates over elements in a variety of built-in data structures. Let’s see how to use `range` with some of the data structures we’ve already learned.
+// `range` iterates over elements in a variety of built-in data structures. Let's see how to use `range` with some of the data structures we've already learned.
 package main
 
 import "fmt"
@@ -14,7 +14,7 @@ func main() {
     fmt.Println("sum:", sum)
 
     // `range` on arrays and slices provides both the index and value for each entry. 
-    // Above we didn’t need the index, so we ignored it with the blank identifier `_`. Sometimes we actually want the indexes though.
+    // Above we didn't need the index, so we ignored it with the blank identifier `_`. Sometimes we actually want the indexes though.
     for i, num := range nums {
         if num == 3 {
             fmt.Println("index:", i)
