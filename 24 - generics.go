@@ -36,7 +36,7 @@ func (lst *List[T]) Push(v T) {
     }
 }
 
-// `AllElements` returns all the List elements as a slice. In the next example we’ll see a more idiomatic way of iterating over all elements of custom types.
+// `AllElements` returns all the List elements as a slice. In the next example we'll see a more idiomatic way of iterating over all elements of custom types.
 func (lst *List[T]) AllElements() []T {
     var elems []T
     for e := lst.head; e != nil; e = e.next {
@@ -48,7 +48,7 @@ func (lst *List[T]) AllElements() []T {
 func main() {
     var s = []string{"foo", "bar", "zoo"}
 
-    // When invoking generic functions, we can often rely on type inference. Note that we don’t have to specify the types for `S` and `E` when calling `SlicesIndex` - the compiler infers them automatically.
+    // When invoking generic functions, we can often rely on type inference. Note that we don't have to specify the types for `S` and `E` when calling `SlicesIndex` - the compiler infers them automatically.
     fmt.Println("index of zoo:", SlicesIndex(s, "zoo"))
 
     // ...though we could also specify them explicitly.

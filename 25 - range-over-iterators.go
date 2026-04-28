@@ -8,7 +8,7 @@ import (
     "strings"
 )
 
-// Let’s look at the `List` type from the previous example again. In that example we had an `AllElements` method that returned a slice of all elements in the list. 
+// Let's look at the `List` type from the previous example again. In that example we had an `AllElements` method that returned a slice of all elements in the list. 
 // With Go iterators, we can do it better - as shown below.
 type List[T any] struct {
     head, tail *element[T]
@@ -34,7 +34,7 @@ func (lst *List[T]) All() iter.Seq[T] {
     return func(yield func(T) bool) {
 
         // The iterator function takes another function as a parameter, called `yield` by convention (but the name can be arbitrary). 
-        // It will call `yield` for every element we want to iterate over, and note `yield`’s return value for a potential early termination.
+        // It will call `yield` for every element we want to iterate over, and note `yield`'s return value for a potential early termination.
         for e := lst.head; e != nil; e = e.next {
             if !yield(e.val) {
                 return
@@ -43,8 +43,8 @@ func (lst *List[T]) All() iter.Seq[T] {
     }
 }
 
-// Iteration doesn’t require an underlying data structure, and doesn’t even have to be finite! 
-// Here’s a function returning an iterator over Fibonacci numbers: it keeps running as long as `yield` keeps returning `true`.
+// Iteration doesn't require an underlying data structure, and doesn't even have to be finite! 
+// Here's a function returning an iterator over Fibonacci numbers: it keeps running as long as `yield` keeps returning `true`.
 func genFib() iter.Seq[int] {
     return func(yield func(int) bool) {
         a, b := 0, 1

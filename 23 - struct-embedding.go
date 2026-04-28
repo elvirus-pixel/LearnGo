@@ -27,7 +27,7 @@ func main() {
         str: "some name",
     }
 
-    // We can access the base’s fields directly on `co`, e.g. `co.num`.
+    // We can access the base's fields directly on `co`, e.g. `co.num`.
     fmt.Printf("co={num: %v, str: %v}\n", co.num, co.str)
 
     // Alternatively, we can spell out the full path using the embedded type name.
